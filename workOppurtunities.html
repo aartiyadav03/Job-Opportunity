@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contactStyle.css">
+</head>
+<body>
+    <nav class="navbar">
+    
+        <div class="container">
+          <a href="images/2nd.webp" class="logo"> Opportunities in Japan</a>
+          <ul class="nav-menu"> 
+            <li><a href="index.html">Home</a></li>
+            <li><a href="joblistings.html">Job Listings</a></li>
+            <li><a href="blogs.html">Blog</a></li>
+            <li><a href="aboutUs.html">About Us</a></li>
+            <li><a href="contactUs.html">Contact Us</a></li>
+          </ul>
+    
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+
+      <div class="custom-div">
+        <h2 class="div-title">Just a Click away</h2>
+        <h3 class="div-subtitle">from your dream job!</h3>
+        <p class="div-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at leo vel ex faucibus eleifend.</p>
+        <a href="blogs.html" class="div-link">Get to know more about work culture of japan</a>
+    </div>
+        <div class="job-listings-container">
+        <!-- Job boxes -->
+        <div class="job-box">
+            <h2>Job Title 1</h2>
+            <p>Salary: $50,000 per year</p>
+            <p>Education: Bachelor's degree</p>
+            <p>Skills: HTML, CSS, JavaScript</p>
+            <p>Experience: 2-4 years</p>
+            <button class="apply-btn" onclick="showApplicationForm()">Apply</button>
+        </div>
+        <div class="job-box">
+          <h2>Job Title 1</h2>
+          <p>Salary: $50,000 per year</p>
+          <p>Education: Bachelor's degree</p>
+          <p>Skills: HTML, CSS, JavaScript</p>
+          <p>Experience: 2-4 years</p>
+          <button class="apply-btn" onclick="showApplicationForm()">Apply</button>
+      </div>
+      <div class="job-box">
+        <h2>Job Title 1</h2>
+        <p>Salary: $50,000 per year</p>
+        <p>Education: Bachelor's degree</p>
+        <p>Skills: HTML, CSS, JavaScript</p>
+        <p>Experience: 2-4 years</p>
+        <button class="apply-btn" onclick="showApplicationForm()">Apply</button>
+            </div>
+            <div class="job-box">
+              <h2>Job Title 1</h2>
+              <p>Salary: $50,000 per year</p>
+              <p>Education: Bachelor's degree</p>
+              <p>Skills: HTML, CSS, JavaScript</p>
+              <p>Experience: 2-4 years</p>
+              <button class="apply-btn" onclick="showApplicationForm()">Apply</button>
+          </div>
+          <div class="job-box">
+            <h2>Job Title 1</h2>
+            <p>Salary: $50,000 per year</p>
+            <p>Education: Bachelor's degree</p>
+            <p>Skills: HTML, CSS, JavaScript</p>
+            <p>Experience: 2-4 years</p>
+            <button class="apply-btn" onclick="showApplicationForm()">Apply</button>
+        </div>
+        <div class="job-box">
+          <h2>Job Title 1</h2>
+          <p>Salary: $50,000 per year</p>
+          <p>Education: Bachelor's degree</p>
+          <p>Skills: HTML, CSS, JavaScript</p>
+          <p>Experience: 2-4 years</p>
+          <button class="apply-btn" onclick="showApplicationForm()">Apply</button>
+        </div>
+        <div class="job-box">
+          <h2>Job Title 1</h2>
+          <p>Salary: $50,000 per year</p>
+          <p>Education: Bachelor's degree</p>
+          <p>Skills: HTML, CSS, JavaScript</p>
+          <p>Experience: 2-4 years</p>
+          <button class="apply-btn" onclick="showApplicationForm()">Apply</button>
+        </div>
+        <div class="job-box">
+          <h2>Job Title 1</h2>
+          <p>Salary: $50,000 per year</p>
+          <p>Education: Bachelor's degree</p>
+          <p>Skills: HTML, CSS, JavaScript</p>
+          <p>Experience: 2-4 years</p>
+          <button class="apply-btn" onclick="showApplicationForm()">Apply</button>
+      </div>
+      <div class="job-box">
+        <h2>Job Title 1</h2>
+        <p>Salary: $50,000 per year</p>
+        <p>Education: Bachelor's degree</p>
+        <p>Skills: HTML, CSS, JavaScript</p>
+        <p>Experience: 2-4 years</p>
+        <button class="apply-btn" onclick="showApplicationForm()">Apply</button>
+    </div>
+    <div class="job-box">
+      <h2>Job Title 1</h2>
+      <p>Salary: $50,000 per year</p>
+      <p>Education: Bachelor's degree</p>
+      <p>Skills: HTML, CSS, JavaScript</p>
+      <p>Experience: 2-4 years</p>
+      <button class="apply-btn" onclick="showApplicationForm()">Apply</button>
+  </div>
+        <div class="application-form-container" id="application-form-container">
+
+            <div class="application-form">
+                <button class="go-back-btn" onclick="goBack()">&#9664;</button>
+                <h3>Apply for Job</h3>
+                <form action="submit_application.php" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="experience">Work Experience:</label>
+                    <input type="text" id="experience" name="experience" required>
+
+                    <label for="resume">Resume:</label>
+                    <input type="file" id="resume" name="resume" required accept=".pdf,.doc,.docx">
+
+                    <label for="cover-letter">Cover Letter:</label>
+                    <textarea id="cover-letter" name="cover-letter" rows="4" required></textarea>
+
+                    <button type="submit">Submit</button>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+   
+    <section class="contact-section">
+      <h1>Contact Us</h1>
+      <div class="contact-info">
+          <p>Email: contact@example.com</p>
+          <p>Phone: +1234567890</p>
+          <p>Address: 123 Street Name, City, Country</p>
+      </div>
+    
+    <footer>
+          <div class="container">
+              <p>&copy; 2024 Aarti Yadav</p>
+          </div>
+      </footer> 
+
+      <script src="application.js"></script>
+</body>
+</html>
